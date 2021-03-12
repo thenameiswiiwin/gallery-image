@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-cream: #fae8e0;
+	--clr-hotPink: #ef7c8e;
+	--clr-spearMint: #b6e2d3;
+	--clr-charcoal: #122620;
+	--clr-tan: #b68d40;
+	--clr-gold: #d6ad60;
+}
+
+body {
+	background-color: var(--clr-cream);
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 100vh;
+}
+
+/* Navigation */
+.nav {
+	color: var(--clr-tan);
+	background-color: var(--clr-charcoal);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 2.5em 0 1em 0;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	height: 10%;
+}
+.nav__brand {
+	margin: 0;
+	font-size: 3rem;
+	cursor: grab;
+	z-index: 10;
+}
+
+/* SWIPER */
+.swiper-container {
+	margin: 0 auto;
+	height: 90%;
+}
+/* Gallery */
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-slide img {
+	max-height: 600px;
+	max-width: 100%;
+}
+/* Buttons */
+.btn:focus {
+	outline: none;
+}
+.swiper-button-prev:active {
+	color: var(--clr-hotPink);
+}
+.swiper-button-next:active {
+	color: var(--clr-spearMint);
+}
+
+@media screen and (max-width: 887px) {
+	body > .swiper-container {
+		margin: 1em;
+	}
+	.swiper-slide img {
+		min-width: 50%;
+	}
+}

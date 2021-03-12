@@ -4,11 +4,40 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- SwiperJS CSS -->
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="/css/style.css" />
 		<title>Swiper Gallery</title>
 	</head>
 	<body>
-		<!-- Swiper JS -->
+		<nav class="nav">
+			<h1 class="nav__brand">Gallery</h1>
+		</nav>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="/img/leone-venter.jpg" alt="Leone Venter" />
+				</div>
+				<div class="swiper-slide">
+					<img src="/img/moren-hsu.jpg" alt="Moren Hsu" />
+				</div>
+				<div class="swiper-slide">
+					<img src="/img/mukul-wadhwa.jpg" alt="Mukul Wadhwa" />
+				</div>
+				<div class="swiper-slide">
+					<img src="/img/sarah-dorweiler.jpg" alt="Sarah Dorweiler" />
+				</div>
+			</div>
+			<div class="btn swiper-button-prev"></div>
+			<div class="btn swiper-button-next"></div>
+		</div>
+
+		<!-- Popmotion -->
+		<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+		<!-- SwiperJS SCRIPT -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<!-- SCRIPT -->
+		<script src="/src/index.js"></script>
 	</body>
 </html>
